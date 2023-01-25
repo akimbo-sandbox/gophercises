@@ -25,7 +25,7 @@ func main() {
 	// fallback
 	yaml, err := os.ReadFile(*yamlFilename)
 	if err != nil {
-		panic("oops")
+		panic(err)
 	}
 	yamlHandler, err := urlshort.YAMLHandler(yaml, mapHandler)
 	if err != nil {
