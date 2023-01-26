@@ -19,7 +19,7 @@ func main() {
 	}
 	mapHandler := urlshort.MapHandler(pathsToUrls, mux)
 
-	yamlFilename := flag.String("yamlFilename", "paths.yaml", "")
+	yamlFilename := flag.String("filename", "paths.yaml", "Filename in .yaml format for url paths.")
 	flag.Parse()
 
 	// Build the YAMLHandler using the mapHandler as the
